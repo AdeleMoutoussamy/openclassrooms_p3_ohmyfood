@@ -505,7 +505,7 @@ ul {
     background-size: 100% 100%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   /* ==Section Explore== */
   .explore__title {
     width: 50%;
@@ -514,19 +514,8 @@ ul {
   }
 
   /* ==Section Fonctionnement== */
-  .function__global {
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-    margin: auto;
-  }
-  .function__header {
-    width: 100%;
-  }
-  .function__text {
-    margin: auto;
-    flex: 1;
-    margin: 0 0 0 30px;
+  .function__numb {
+    width: 3%;
   }
 
   /* ==Section Restaurants== */
@@ -541,7 +530,7 @@ ul {
   }
 
   .arts {
-    width: 45%;
+    width: 44%;
     margin: auto;
   }
 
@@ -563,5 +552,35 @@ ul {
   .footer__links {
     margin: auto;
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* ==Section Fonctionnement== */
+  .function__global {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .function__header {
+    width: 100%;
+  }
+  .function__text {
+    flex: 1;
+    margin: 0 0 0 30px;
+  }
+  .function__numb {
+    width: 8%;
+  }
+
+  /* ==Section Restaurants== */
+  .arts {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* ==Image== */
+  .img {
+    height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
