@@ -1,8 +1,80 @@
 @media screen and (min-width: 768px) 
 {
  /* ==Image== */
-   .img
-   {
-        height: 450px;
-   }  
+    .img
+    {
+        height: 500px;
+        margin-bottom: -55px;
+    }
+
+ /* ==Section Menu== */
+    .menupage
+    {
+
+        &__global
+        {
+            width: 90%;
+            margin: auto;
+        }
+
+        &__btn
+        {
+            margin: auto;
+            padding: 60px 0px;
+        }
+
+        &__link
+        {
+            border-radius: 30px;
+            padding: 12px 35px;
+            font-size: 20px;
+        }
+    }
+
+    .menu
+    {
+        &__title
+        {
+            font-size: 18px;
+            max-width: 7%;
+        }
+
+        &__name
+        {
+            font-size: 18px;
+        }  
+    }
+}
+
+@media screen and (min-width: 992px) 
+{
+ /* ==Section Menu== */
+    .menupage
+    {
+        max-width: 1280px;
+        margin: auto;
+
+        &__global
+        {
+            width: 95%;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        &__header
+        {
+            width: 100%;
+        }
+    }
+
+    .menu
+    {
+        width: 30%;
+        margin: auto;
+        &__title
+        {
+            max-width: 16%;
+        }
+    }
 }
