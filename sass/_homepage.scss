@@ -1,0 +1,256 @@
+ /* ==Header== */
+ .header
+ {
+    box-shadow: 0px 3px 4px $shadow;
+    position: relative;
+    height: 55px;
+
+    &__logo
+    {
+        font-family: 'Shrikhand', sans-serif;
+        text-align: center;
+    }
+ }
+ /* ==Fin Header== */
+ /* ============================================================ */
+
+ /* ==Section Local== */
+ .local
+ {
+    background-color: #ececec;
+
+    &__text
+    {
+        text-align: center;
+        padding: 15px 26px 15px 0px;
+    }
+
+    &__icon
+    {
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    &__sp
+    {
+        font-weight: 500;
+    }
+ }
+ /* ==Fin Section Local== */
+ /* ============================================================ */
+
+ /* ==Section Explore== */
+ .explore
+ {
+    display: flex;
+    flex-direction: column;
+    background-color: $blocgrey;
+    padding: 0px 51px 60px 51px;
+
+    &__header
+    {
+        text-align: center;
+        margin: auto;
+    }
+
+    &__title
+    {
+        padding-top: 15px;
+    }
+
+    &__p
+    {
+        margin-top: -10px;
+        font-weight: 300;
+    }
+
+    &__btn
+    {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__link
+    {
+        border-radius: 20px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        box-shadow: 0px 4px 6px $shadow;
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 16px;
+    }
+ }
+ /* ==Fin Section Explore== */
+ /* ============================================================ */
+
+ /* ==Section Fonctionnement== */
+ .function
+ {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 35px 20px;
+
+    &__header
+    {
+        margin-top: 22px;
+    }
+
+    &__text
+    {
+        display: flex;
+        position: relative;
+        border-radius: 15px;
+        background-color: $blocgrey;
+        margin: 0px 0px 22px 13px;
+        padding: 20px 0px 20px 10px;
+        box-shadow: 0px 3px 6px $shadow;
+    }
+
+    &__numb
+    {
+        position: absolute;
+        border-radius: 20px;
+        background-color: $color-primary;
+        color: #fff;
+        font-size: 15px;
+        width: 6%;
+        height: 19px;
+        padding: 1px 0px 0px 0px;
+        text-align: center;
+        margin-left: -21px;
+    }
+
+    &__icon
+    {
+        color: #979797;
+        margin-left: 20px;
+    }
+
+    &__sp
+    {
+        font-weight: bold;
+        margin-left: 20px;
+    }
+ }
+ /* ==Fin Section Fonctionnement== */
+ /* ============================================================ */
+
+ /* ==Section Restaurants== */
+ .restaurants
+ {
+    display: flex;
+    flex-direction: column;
+    background-color: $blocgrey;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    &__header
+    {
+        margin-left: 20px;
+    }
+ }
+
+ .arts
+ {
+    padding: 0px 20px;
+ }
+
+ .art
+ {
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px $shadow;
+    margin-bottom: 20px;
+
+    &__fig
+    {
+        margin: auto;
+    }
+
+    &__new
+    {
+        position: absolute;
+        border-radius: 3px;
+        background-color: $color-tertiary;
+        color: #169575;
+        font-weight: bold;
+        padding: 6px 10px;
+        top: 14px;
+        right: 15px;
+    }
+
+    &__img
+    {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 67%;
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    &__figcap
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 16px 3px 12px;
+    }
+
+    &__text
+    {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__title
+    {
+        margin: auto;
+        margin-bottom: 4px;
+    }
+
+    &__p
+    {
+        margin: auto;
+        font-size: 17px;
+    }
+
+    &__icon
+    {
+        display: flex;
+        cursor: pointer;
+        font-size: 26px;
+    }
+ }
+ /* ==Fin Section Restaurants== */
+ /* ============================================================ */
+
+ /* ==Footer== */
+ .footer
+ {
+    display: flex;
+    background-color: #343434;
+
+    &__logo
+    {
+        font-family: 'Shrikhand', sans-serif;
+        color: #fff;
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    &__links
+    {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    &__icon
+    {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+ }
+ /* ==Fin Footer==*/
+ /* ============================================================ */
