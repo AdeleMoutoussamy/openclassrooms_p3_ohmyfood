@@ -1,0 +1,212 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================================ */
+/* ==Header== */
+.header {
+  box-shadow: 0px 3px 4px #cecece;
+  position: relative;
+  height: 55px;
+}
+.header__logo {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+}
+
+/* ==Fin Header== */
+/* ============================================================ */
+/* ==Section Local== */
+.local {
+  background-color: #ececec;
+}
+.local__text {
+  text-align: center;
+  padding: 15px 26px 15px 0px;
+}
+.local__icon {
+  margin-right: 10px;
+  font-size: 17px;
+}
+.local__sp {
+  font-weight: 500;
+}
+
+/* ==Fin Section Local== */
+/* ============================================================ */
+/* ==Section Explore== */
+.explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 0px 51px 60px 51px;
+}
+.explore__header {
+  text-align: center;
+  margin: auto;
+}
+.explore__title {
+  padding-top: 15px;
+}
+.explore__p {
+  margin-top: -10px;
+  font-weight: 300;
+}
+.explore__btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.explore__link {
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 6px #cecece;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 16px;
+}
+
+/* ==Fin Section Explore== */
+/* ============================================================ */
+/* ==Section Fonctionnement== */
+.function {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 35px 20px;
+}
+.function__header {
+  margin-top: 22px;
+}
+.function__text {
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  margin: 0px 0px 22px 13px;
+  padding: 20px 0px 20px 10px;
+  box-shadow: 0px 3px 6px #cecece;
+}
+.function__numb {
+  position: absolute;
+  border-radius: 20px;
+  background-color: #9356DC;
+  color: #fff;
+  font-size: 15px;
+  width: 6%;
+  height: 19px;
+  padding: 1px 0px 0px 0px;
+  text-align: center;
+  margin-left: -21px;
+}
+.function__icon {
+  color: #979797;
+  margin-left: 20px;
+}
+.function__sp {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* ==Fin Section Fonctionnement== */
+/* ============================================================ */
+/* ==Section Restaurants== */
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.restaurants__header {
+  margin-left: 20px;
+}
+
+.arts {
+  padding: 0px 20px;
+}
+
+.art {
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px #cecece;
+  margin-bottom: 20px;
+}
+.art__fig {
+  margin: auto;
+}
+.art__new {
+  position: absolute;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #169575;
+  font-weight: bold;
+  padding: 6px 10px;
+  top: 14px;
+  right: 15px;
+}
+.art__img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 67%;
+  border-radius: 16px 16px 0px 0px;
+}
+.art__figcap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px 3px 12px;
+}
+.art__text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.art__title {
+  margin: auto;
+  margin-bottom: 4px;
+}
+.art__p {
+  margin: auto;
+  font-size: 17px;
+}
+.art__icon {
+  display: flex;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+/* ==Fin Section Restaurants== */
+/* ============================================================ */
+/* ==Footer== */
+.footer {
+  display: flex;
+  background-color: #343434;
+}
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.footer__links {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer__icon {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+/* ==Fin Footer==*/
+/* ============================================================ *//*# sourceMappingURL=style.css.map */

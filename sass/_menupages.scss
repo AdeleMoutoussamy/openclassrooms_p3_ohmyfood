@@ -1,0 +1,159 @@
+ /* ==Header== */
+ .header
+ {
+    &--witharrow
+    {
+        box-shadow: none;
+    }
+    &__icon
+    {
+        position: absolute;
+        margin-left: 25px;
+        top: 12px;
+        font-size: 20px;
+    }
+ }
+ /* ==Fin Header== */
+ /* ============================================================ */
+
+ /* ==Image== */
+ .img
+ {
+    height: 285px;
+    width: 100%;
+    object-fit: cover;
+ }
+ /* ============================================================ */
+
+ /* ==Section Menu== */
+ .menupage
+ {
+    position: relative;
+    border-radius: 35px 35px 0px 0px;
+    background-color: $blocgrey;
+    margin-top: -55px;
+
+    &__header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 30px 0px 20px;
+    }
+
+    &__title
+    {
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 500;
+        font-size: 27px;
+    }
+
+    &__icon
+    {
+        display: flex;
+        cursor: pointer;
+        font-size: 26px;
+    }
+
+    &__like2
+    {
+        background-clip: text;
+        color: transparent;
+        position: absolute;
+    }
+
+    &__btn
+    {
+        text-align: center;
+        padding: 18px 0px 60px 0px;
+    }
+
+    &__link
+    {
+        border-radius: 20px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        box-shadow: 0px 4px 6px $shadow;
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 52px;
+    }
+ }
+ 
+ .menu
+ {
+    margin-bottom: 40px;
+    padding: 0px 14px;
+
+    &__title
+    {
+        font-size: 17px;
+        font-weight: 400;
+        border-bottom: 3px solid $color-tertiary;
+        width: 12%;
+    }
+
+    &__menu
+    {
+        display: flex;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 3px 5px $shadow;
+    }
+
+    &__text
+    {
+        margin-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__name
+    {
+        margin-top: 10px;
+        margin-bottom: -10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__p
+    {
+        font-size: 15px;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 12px;
+    }
+
+    &__icon
+    {
+        background-color: $color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16%;
+        margin: -16px -58px -16px 16px;
+    }
+
+    &__check
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 19px;
+    }
+ /* ==Fin Section Menu== */
+ /* ============================================================ */
+}
