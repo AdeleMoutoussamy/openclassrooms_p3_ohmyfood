@@ -152,7 +152,7 @@ ul {
   color: #fff;
   font-size: 15px;
   width: 6%;
-  height: 19px;
+  height: 30%;
   padding: 1px 0px 0px 0px;
   text-align: center;
   margin-left: -21px;
@@ -503,5 +503,65 @@ ul {
   }
   100% {
     background-size: 100% 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* ==Section Explore== */
+  .explore__title {
+    width: 50%;
+    margin: auto;
+    padding: 35px 0px;
+  }
+
+  /* ==Section Fonctionnement== */
+  .function__global {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .function__header {
+    width: 100%;
+  }
+  .function__text {
+    margin: auto;
+    flex: 1;
+    margin: 0 0 0 30px;
+  }
+
+  /* ==Section Restaurants== */
+  .restaurants__global {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .restaurants__header {
+    width: 100%;
+  }
+
+  .arts {
+    width: 45%;
+    margin: auto;
+  }
+
+  /* ==Footer== */
+  .footer__global {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+  .footer__list {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .footer__logo {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer__links {
+    margin: auto;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
