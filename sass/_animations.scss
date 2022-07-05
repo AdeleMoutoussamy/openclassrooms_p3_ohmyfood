@@ -1,0 +1,64 @@
+/* ==Loader== */
+@keyframes loader 
+{
+  100% 
+  {
+    opacity: 0;
+    z-index: -10;
+  }
+    
+} 
+
+@keyframes jump 
+{
+  0% 
+  {
+    transform: translateY(0);
+  }
+  25% 
+  {
+    transform: translateY(0.5rem);
+  }
+  75% 
+  {
+    transform: translateY(-0.5rem);
+  }
+  100% 
+  {
+    transform: translateY(0);
+  }
+}
+
+/* ==Menus Apparitions== */
+@keyframes itemAppear 
+{   
+  0% 
+  {
+    transform: scale(0);
+  }
+  100% 
+  {
+    transform: scale(1);
+  }
+}
+
+@for $i from 0 to 9
+{
+  .delay-#{$i} 
+  {
+    animation-delay: #{$i/7}s;
+  }
+}
+
+/* ==Like== */
+@keyframes animationLike
+{
+  0% 
+  {  
+    background-size: 100% 0%;
+  }
+  100%
+  {
+    background-size: 100% 100%;
+  }
+}
