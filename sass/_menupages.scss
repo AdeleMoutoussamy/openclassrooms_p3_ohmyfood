@@ -5,6 +5,7 @@
     {
         box-shadow: none;
     }
+
     &__icon
     {
         position: absolute;
@@ -63,11 +64,10 @@
         &:hover
         {
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            background-size: 100% 100%;
             -webkit-background-clip: text;
             background-position: bottom;
             background-repeat: no-repeat;  
-            animation: animationLike 0.50s linear;
+            animation: animationLike 0.5s;
         }
     }
 
@@ -88,7 +88,7 @@
         transition-duration: 0.25s;
         &:hover
         {
-            background: linear-gradient(to bottom right, #ff8edf, #a16be4);
+            background: linear-gradient(to bottom right, #fd97e0, #aa77e9);
             box-shadow: 0px 6px 8px #b6b6b6;
         }
     }
@@ -97,14 +97,14 @@
  .menu
  {
     margin-bottom: 40px;
-    padding: 0px 14px;
+    padding: 0px 20px;
 
     &__title
     {
         font-size: 17px;
         font-weight: 400;
         border-bottom: 3px solid $color-tertiary;
-        width: 12%;
+        max-width: 45px;
     }
 
     &__menu
@@ -118,10 +118,8 @@
         position: relative;
         cursor: pointer;
         animation: itemAppear 1.5s;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-timing-function: cubic-bezier(0.5,1.58,.34,.82);
         animation-fill-mode: both;
-        transform: scale(0);
-        max-width: 100%;
     }
 
     &__text
@@ -135,6 +133,7 @@
 
     &__name
     {
+        font-size: 16.85px;
         margin-top: 10px;
         margin-bottom: -10px;
         white-space: nowrap;
@@ -157,7 +156,7 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding-bottom: 12px;
-        margin-right: 6px;
+        margin-right: 5px;
     }
 
     &__icon
@@ -166,12 +165,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 16%;
+        width: 58px;
         margin: -16px -58px -16px 16px;
         transition-duration: 0.5s;
     }
 
-    &:hover &__icon
+    &__menu:hover &__icon
     {
         margin-right: 0px;
     }
@@ -187,7 +186,7 @@
         transition-duration: 0.5s;
     }
 
-    &:hover &__check
+    &__menu:hover &__check
     {
         transform: rotate(0);
     }

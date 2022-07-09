@@ -34,15 +34,17 @@
 {   
   0% 
   {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(20px)
   }
   100% 
   {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@for $i from 0 to 9
+@for $i from 0 to 10
 {
   .delay-#{$i} 
   {
@@ -55,10 +57,10 @@
 {
   0% 
   {  
-    background-size: 100% 0%;
+    transform: scale(0);
   }
-  100%
+  50%
   {
-    background-size: 100% 100%;
+    transform: scale(1.2);
   }
 }

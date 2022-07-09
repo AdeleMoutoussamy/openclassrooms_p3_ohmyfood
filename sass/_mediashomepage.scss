@@ -1,15 +1,75 @@
-@media screen and (min-width: 768px)
+@media screen and (min-width: 390px)
 {
- /* ==Section Explore== */
+    .explore
+    {
+        &__title
+        {
+            width: 81%;
+            margin: auto;
+            padding: 35px 0px 14px 0px;
+        }
+
+        &__p
+        {
+            width: 95%;
+            margin: auto;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 458px)
+{
+    .explore
+    {
+        &__title
+        {
+            width: 65%;
+
+        }
+    }
+}
+
+@media screen and (min-width: 486px)
+{
+    .explore
+    {
+        &__p
+        {
+            width: 71%;
+
+        }
+    }
+}
+
+@media screen and (min-width: 546px)
+{
+    .explore
+    {
+        &__title
+        {
+            width: 53%;
+
+        }
+    }
+}
+
+@media screen and(min-width: 569px)
+{
     .explore
     {
         &__title
         {
             width: 50%;
-            margin: auto;
-            padding: 35px 0px;
         }
+    }
+}
 
+@media screen and (min-width: 768px)
+{
+ /* ==Section Explore== */
+    .explore
+    {
         &__link
         {
             border-radius: 30px;
@@ -17,8 +77,6 @@
             font-size: 18px;
         }
     }
-
- /* ==Section Fonctionnement== */
 
  /* ==Section Restaurants== */
     .restaurants
@@ -48,8 +106,7 @@
     {
         &__global
         {
-            width: 90%;
-            margin: auto;
+            width: 96%;
         }
 
         &__list
@@ -70,6 +127,7 @@
         {
             margin: auto;
             padding-bottom: 40px;
+            width: 27%;
         }
     }
 }
@@ -103,5 +161,14 @@
     .arts
     {
         width: 45%;
+    }
+
+ /* ==Footer== */
+    .footer
+    {
+        &__links
+        {
+            width: 21%;
+        }
     }
 }

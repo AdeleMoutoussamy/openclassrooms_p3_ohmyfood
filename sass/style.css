@@ -18,13 +18,12 @@ ul {
   position: fixed;
   height: 100%;
   width: 100%;
-  left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   animation: loader 0.01s;
   animation-delay: 1.75s;
   animation-fill-mode: both;
-  z-index: 10000;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +115,7 @@ ul {
   transition-duration: 0.25s;
 }
 .explore__link:hover {
-  background: linear-gradient(to bottom right, #ff8edf, #a16be4);
+  background: linear-gradient(to bottom right, #fd97e0, #aa77e9);
   box-shadow: 0px 6px 8px #b6b6b6;
 }
 
@@ -151,17 +150,17 @@ ul {
   background-color: #9356DC;
   color: #fff;
   font-size: 15px;
-  width: 6%;
-  height: 30%;
-  padding: 1px 0px 0px 0px;
+  width: 21px;
+  height: 19px;
+  padding: 2px 0px 0px 0px;
   text-align: center;
-  margin-left: -21px;
+  margin-left: -22px;
 }
 .function__icon {
   color: #979797;
   margin-left: 20px;
 }
-.function__icon:hover {
+.function__text:hover .function__icon {
   color: #9356DC;
 }
 .function__sp {
@@ -212,7 +211,7 @@ ul {
   height: 200px;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 67%;
+  object-position: 50% 65%;
   border-radius: 16px 16px 0px 0px;
 }
 .art__figcap {
@@ -245,11 +244,10 @@ ul {
 }
 .art__like2:hover {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-size: 100% 100%;
   -webkit-background-clip: text;
   background-position: bottom;
   background-repeat: no-repeat;
-  animation: animationLike 0.5s linear;
+  animation: animationLike 0.5s;
 }
 
 /* ==Fin Section Restaurants== */
@@ -327,11 +325,10 @@ ul {
 }
 .menupage__like2:hover {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-size: 100% 100%;
   -webkit-background-clip: text;
   background-position: bottom;
   background-repeat: no-repeat;
-  animation: animationLike 0.5s linear;
+  animation: animationLike 0.5s;
 }
 .menupage__btn {
   text-align: center;
@@ -347,13 +344,13 @@ ul {
   transition-duration: 0.25s;
 }
 .menupage__link:hover {
-  background: linear-gradient(to bottom right, #ff8edf, #a16be4);
+  background: linear-gradient(to bottom right, #fd97e0, #aa77e9);
   box-shadow: 0px 6px 8px #b6b6b6;
 }
 
 .menu {
   margin-bottom: 40px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   /* ==Fin Section Menu== */
   /* ============================================================ */
 }
@@ -361,7 +358,7 @@ ul {
   font-size: 17px;
   font-weight: 400;
   border-bottom: 3px solid #99E2D0;
-  width: 12%;
+  max-width: 45px;
 }
 .menu__menu {
   display: flex;
@@ -375,8 +372,6 @@ ul {
   animation: itemAppear 1.5s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
-  transform: scale(0);
-  max-width: 100%;
 }
 .menu__text {
   margin-left: 10px;
@@ -386,6 +381,7 @@ ul {
   flex: 1;
 }
 .menu__name {
+  font-size: 16.85px;
   margin-top: 10px;
   margin-bottom: -10px;
   white-space: nowrap;
@@ -404,18 +400,18 @@ ul {
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 12px;
-  margin-right: 6px;
+  margin-right: 5px;
 }
 .menu__icon {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16%;
+  width: 58px;
   margin: -16px -58px -16px 16px;
   transition-duration: 0.5s;
 }
-.menu:hover .menu__icon {
+.menu__menu:hover .menu__icon {
   margin-right: 0px;
 }
 .menu__check {
@@ -427,7 +423,7 @@ ul {
   transform: rotate(-265deg);
   transition-duration: 0.5s;
 }
-.menu:hover .menu__check {
+.menu__menu:hover .menu__check {
   transform: rotate(0);
 }
 
@@ -455,10 +451,12 @@ ul {
 /* ==Menus Apparitions== */
 @keyframes itemAppear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .delay-0 {
@@ -497,29 +495,59 @@ ul {
   animation-delay: 1.1428571429s;
 }
 
+.delay-9 {
+  animation-delay: 1.2857142857s;
+}
+
 /* ==Like== */
 @keyframes animationLike {
   0% {
-    background-size: 100% 0%;
+    transform: scale(0);
   }
-  100% {
-    background-size: 100% 100%;
+  50% {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 390px) {
+  .explore__title {
+    width: 81%;
+    margin: auto;
+    padding: 35px 0px 14px 0px;
+  }
+  .explore__p {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 458px) {
+  .explore__title {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 486px) {
+  .explore__p {
+    width: 71%;
+  }
+}
+@media screen and (min-width: 546px) {
+  .explore__title {
+    width: 53%;
+  }
+}
+@media screen and (min-width: 569px) {
+  .explore__title {
+    width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   /* ==Section Explore== */
-  .explore__title {
-    width: 50%;
-    margin: auto;
-    padding: 35px 0px;
-  }
   .explore__link {
     border-radius: 30px;
     padding: 12px 35px;
     font-size: 18px;
   }
 
-  /* ==Section Fonctionnement== */
   /* ==Section Restaurants== */
   .restaurants__global {
     display: flex;
@@ -538,8 +566,7 @@ ul {
 
   /* ==Footer== */
   .footer__global {
-    width: 90%;
-    margin: auto;
+    width: 96%;
   }
   .footer__list {
     display: flex;
@@ -554,6 +581,7 @@ ul {
   .footer__links {
     margin: auto;
     padding-bottom: 40px;
+    width: 27%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -576,12 +604,16 @@ ul {
   .arts {
     width: 45%;
   }
+
+  /* ==Footer== */
+  .footer__links {
+    width: 21%;
+  }
 }
 @media screen and (min-width: 768px) {
   /* ==Image== */
   .img {
-    height: 500px;
-    margin-bottom: -55px;
+    height: 285px;
   }
 
   /* ==Section Menu== */
@@ -601,16 +633,21 @@ ul {
 
   .menu__title {
     font-size: 18px;
-    max-width: 7%;
   }
   .menu__name {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  /* ==Image== */
+  .img {
+    height: 500px;
+    margin-bottom: -55px;
+  }
+
   /* ==Section Menu== */
   .menupage {
-    max-width: 1280px;
+    max-width: 1344px;
     margin: auto;
   }
   .menupage__global {
@@ -624,10 +661,9 @@ ul {
   }
 
   .menu {
-    width: 30%;
-    margin: auto;
+    width: 29%;
   }
-  .menu__title {
-    max-width: 16%;
+  .menu__name {
+    font-size: 15.73px;
   }
 }/*# sourceMappingURL=style.css.map */
