@@ -290,7 +290,7 @@
     }
 
     &__like2
-    {
+    {   
         background-clip: text;
         color: transparent;
         position: absolute;
@@ -298,8 +298,6 @@
         {
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             -webkit-background-clip: text;
-            background-position: bottom;
-            background-repeat: no-repeat;  
             animation: animationLike 0.5s;
             transform: scale(1.13);
         }
